@@ -1,2 +1,2 @@
-# Fichiers compilés Java
-*.class
+# Bytecode compilé
+bin/
