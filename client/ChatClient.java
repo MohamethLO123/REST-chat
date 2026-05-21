@@ -17,16 +17,13 @@ public class ChatClient {
 
     private static int lastCount = 0;
     private static final Type MESSAGE_LIST_TYPE = new TypeToken<List<Message>>(){}.getType();
-
     public static void main(String[] args) throws Exception {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Pseudo : ");
         final String pseudo = sc.nextLine();
-
         startPoller(pseudo);
-
         Gson gson = new Gson();
 
         while (true) {
